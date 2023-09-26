@@ -1,0 +1,140 @@
+<!doctype html>
+<title>Code — FSWDB - Knowledge Base</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js" integrity="sha512-1/RvZTcCDEUjY/CypiMz+iqqtaoQfAITmNSJY17Myp4Ms5mdxPS5UV7iOfdZoxcGhzFbOm6sntTKJppjvuhg4g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css" integrity="sha512-ZnR2wlLbSbr8/c9AgLg3jQPAattCUImNsae6NHYnS9KrIwRdcY9DxFotXhNAKIKbAXlRnujIqUWoXXwqyFOeIQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="/static/style.css">
+<body>
+  <div class="container bg-light">
+    <header class="row my-5 user-select-none ">
+      <!-- LOGO -->
+      <h1 class="col-12 col-sm-auto">
+          <a class="p-2 me-5" href="/it/">
+            Knowledge Base
+          </a>
+      </h1>
+      <!-- LANG -->
+      <div class="col hstack">
+        
+          
+            <a class="btn btn-sm" href="/queues/">
+              <img src="/static/img/en.webp" width="32px" height="32px">
+              <span class="d-none">EN</span>
+            </a>
+          
+        
+          
+            <a class="btn btn-sm active">
+              <img src="/static/img/it.webp" width="32px" height="32px">
+              <span class="d-none">IT</span>
+            </a>
+          
+        
+      </div>
+      <!-- DDG -->
+      <div class="col-6 col-sm-auto me-sm-2">
+        <form method="get" id="ddgSearch" action="https://duckduckgo.com/">
+            <input type="hidden" name="sites" value="https://kb.fswdb.eu/" hidden>
+            <input type="hidden" name="k7" value="#ffffff" hidden>
+            <input type="hidden" name="k8" value="#222222" hidden>
+            <input type="hidden" name="k9" value="#daa520" hidden>
+            <input type="hidden" name="kx" value="#9b9b9b" hidden>
+            <input type="hidden" name="kj" value="#daa520" hidden>
+            <input type="hidden" name="kt" value="n" hidden>
+            <input type="hidden" name="kw" value="s" hidden>
+            <input type="hidden" name="ku" value="1" hidden>
+            <input type="hidden" name="kae" value="r" hidden>
+            <input type="hidden" name="kf" value="-1" hidden>
+            <input type="hidden" name="kp" value="1" hidden>
+            <input type="hidden" name="kz" value="-1" hidden>
+            <input type="hidden" name="t" value="fswdb" hidden>
+            <div class="hstack gap-2">
+              <input class="form-control fs-3" type="search" size="10" name="q" aria-label="Search https://kb.fswdb.eu/ on DuckDuckGo"  aria-required="true" required>
+              <button class="btn btn-outline-secondary fs-3 fw-bold bi bi-search" type="submit">
+                <span class="visually-hidden">Search</span>
+              </button>
+            </div>
+        </form>
+      </div>
+    </header>
+    <div class="row">
+      <nav class="col-12 col-sm-auto pe-0 user-select-none">
+        <ul class="nav navbar-nav sticky-top">
+          
+            
+            <li>
+              <a class="rounded-start" href="/it/licensing/">Licenze</a>
+            </li>
+            
+          
+            
+            <li>
+              <a class="rounded-start" href="/it/community-guidelines/">Linee guida</a>
+            </li>
+            
+          
+            
+            <li>
+              <a class="rounded-start" href="/it/credentials/">Credenziali</a>
+            </li>
+            
+          
+             
+            <li class="active">
+              <a class="rounded-start text-decoration-none">Code</a>
+            </li>
+            
+          
+            
+            <li>
+              <a class="rounded-start" href="/it/regulations/">Regolamento</a>
+            </li>
+            
+          
+            
+            <li>
+              <a class="rounded-start" href="/it/volunteering/">Volontariato</a>
+            </li>
+            
+          
+            
+            <li>
+              <a class="rounded-start" href="/it/statistics/">Statistiche</a>
+            </li>
+            
+          
+            
+            <li>
+              <a class="rounded-start" href="/it/status/">Stato</a>
+            </li>
+            
+          
+        </ul>
+      </nav>
+      <main class="col p-3 mb-5">
+        
+  <h2>Code</h2>
+  <p>Questa piattaforma è quasi totalmente automatizzata per garantire il massimo livello di efficienza.
+Quando il sistema rileva un problema che richiede l'intervento umano, prende nota della risorsa difettosa inserendola in una coda.</p>
+<h3>Come funziona la coda Irregular?</h3>
+<p>Questa è una coda pubblica automatizzata che raccoglie tutte le risorse che non possono essere facilmente consultate dai nostri visitatori da tutto il mondo.
+In particolare, se la Homepage che rappresenta una determinata risorsa è irraggiungibile per una settimana o più, la risorsa scompare dal motore di ricerca e viene accodata qui. Dopo un mese (28 giorni e almeno 28 controlli di routine falliti) la risorsa viene clonata nella coda Suggerimenti.</p>
+<h3>Come funziona la coda Blacklist?</h3>
+<p>Questa è una coda pubblica automatizzata che raccoglie continuamente nuovi host Internet potenzialmente pericolosi.
+Tutti gli host in questa coda sono stati a un certo punto coinvolti in crimini informatici e sono quindi automaticamente esclusi dalla pubblicazione delle proprie risorse sulla piattaforma. Tutte le risorse la cui homepage è ospitata da uno o più degli indirizzi elencati qui sono considerate non sicure e aggiunte automaticamente alla coda Irregular.</p>
+<h3>Come funziona la coda Suggestions?</h3>
+<p>Questa è una coda pubblica semi-automatizzata che raccoglie tutte le risorse che non sono state accessibili al pubblico per un lungo periodo di tempo e che potrebbero quindi avere una homepage alternativa, forse più recente, da qualche altra parte. I volontari possono scegliere una nuova homepage tra quelle già suggerite tramite la coda Irregolare. Quando ciò accade, la risorsa riappare nel motore di ricerca e scompare anche dalla coda Irregular.</p>
+<h3>Come posso rimuovere la mia risorsa dalla coda Irregular?</h3>
+<p>La risoluzione del problema sul webserver in cui è ospitata la homepage della risorsa ripristinerà automaticamente l'esclusione dopo due giorni. Se il problema è stato risolto da due giorni interi, accertati con il tuo amministratore di sistema che il firewall non stia bloccando per errore intere nazioni. Se il tuo amministratore non riesce a capire perché una risorsa non viene riammessa automaticamente, non esitare a contattare il supporto della piattaforma.</p>
+
+
+        <footer class="mt-5">
+          <a id="fswdb-logo" class="btn btn-sm btn-link fs-3" href="https://fswdb.eu/about" target="_top">Free Software Database</a>
+          <a class="btn btn-sm btn-link fs-2 px-3 user-select-none float-end" href="#" draggable="false">&uArr;</a>
+        </footer>
+      </main>
+    </div>
+  </div>
+</body>

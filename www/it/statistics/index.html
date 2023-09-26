@@ -1,0 +1,150 @@
+<!doctype html>
+<title>Statistiche — FSWDB - Knowledge Base</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js" integrity="sha512-1/RvZTcCDEUjY/CypiMz+iqqtaoQfAITmNSJY17Myp4Ms5mdxPS5UV7iOfdZoxcGhzFbOm6sntTKJppjvuhg4g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css" integrity="sha512-ZnR2wlLbSbr8/c9AgLg3jQPAattCUImNsae6NHYnS9KrIwRdcY9DxFotXhNAKIKbAXlRnujIqUWoXXwqyFOeIQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="/static/style.css">
+<body>
+  <div class="container bg-light">
+    <header class="row my-5 user-select-none ">
+      <!-- LOGO -->
+      <h1 class="col-12 col-sm-auto">
+          <a class="p-2 me-5" href="/it/">
+            Knowledge Base
+          </a>
+      </h1>
+      <!-- LANG -->
+      <div class="col hstack">
+        
+          
+            <a class="btn btn-sm" href="/statistics/">
+              <img src="/static/img/en.webp" width="32px" height="32px">
+              <span class="d-none">EN</span>
+            </a>
+          
+        
+          
+            <a class="btn btn-sm active">
+              <img src="/static/img/it.webp" width="32px" height="32px">
+              <span class="d-none">IT</span>
+            </a>
+          
+        
+      </div>
+      <!-- DDG -->
+      <div class="col-6 col-sm-auto me-sm-2">
+        <form method="get" id="ddgSearch" action="https://duckduckgo.com/">
+            <input type="hidden" name="sites" value="https://kb.fswdb.eu/" hidden>
+            <input type="hidden" name="k7" value="#ffffff" hidden>
+            <input type="hidden" name="k8" value="#222222" hidden>
+            <input type="hidden" name="k9" value="#daa520" hidden>
+            <input type="hidden" name="kx" value="#9b9b9b" hidden>
+            <input type="hidden" name="kj" value="#daa520" hidden>
+            <input type="hidden" name="kt" value="n" hidden>
+            <input type="hidden" name="kw" value="s" hidden>
+            <input type="hidden" name="ku" value="1" hidden>
+            <input type="hidden" name="kae" value="r" hidden>
+            <input type="hidden" name="kf" value="-1" hidden>
+            <input type="hidden" name="kp" value="1" hidden>
+            <input type="hidden" name="kz" value="-1" hidden>
+            <input type="hidden" name="t" value="fswdb" hidden>
+            <div class="hstack gap-2">
+              <input class="form-control fs-3" type="search" size="10" name="q" aria-label="Search https://kb.fswdb.eu/ on DuckDuckGo"  aria-required="true" required>
+              <button class="btn btn-outline-secondary fs-3 fw-bold bi bi-search" type="submit">
+                <span class="visually-hidden">Search</span>
+              </button>
+            </div>
+        </form>
+      </div>
+    </header>
+    <div class="row">
+      <nav class="col-12 col-sm-auto pe-0 user-select-none">
+        <ul class="nav navbar-nav sticky-top">
+          
+            
+            <li>
+              <a class="rounded-start" href="/it/licensing/">Licenze</a>
+            </li>
+            
+          
+            
+            <li>
+              <a class="rounded-start" href="/it/community-guidelines/">Linee guida</a>
+            </li>
+            
+          
+            
+            <li>
+              <a class="rounded-start" href="/it/credentials/">Credenziali</a>
+            </li>
+            
+          
+            
+            <li>
+              <a class="rounded-start" href="/it/queues/">Code</a>
+            </li>
+            
+          
+            
+            <li>
+              <a class="rounded-start" href="/it/regulations/">Regolamento</a>
+            </li>
+            
+          
+            
+            <li>
+              <a class="rounded-start" href="/it/volunteering/">Volontariato</a>
+            </li>
+            
+          
+             
+            <li class="active">
+              <a class="rounded-start text-decoration-none">Statistiche</a>
+            </li>
+            
+          
+            
+            <li>
+              <a class="rounded-start" href="/it/status/">Stato</a>
+            </li>
+            
+          
+        </ul>
+      </nav>
+      <main class="col p-3 mb-5">
+        
+  <h2>Statistiche</h2>
+  <h2>Chi può modificare una risorsa?</h2>
+<p>Tutte le risorse all'interno del Database del Software Libero possono essere migliorate dai proprietari di token (sviluppatori, manutentori, editori, …) o dai volontari. Qualsiasi modifica eseguita ha l'effetto di peggiorare o migliorare le statistiche della risorsa modificata. Le statistiche vengono aggiornate quotidianamente.</p>
+<h2>Karma</h2>
+<p>Questo valore rappresenta il tempo necessario al lettore medio per comprendere appieno cosa fa la risorsa.</p>
+<h2>Visualizzazioni</h2>
+<p>Questo valore è il numero totale di volte in cui una risorsa ha attirato l'interesse dei visitatori.</p>
+<h2>Data</h2>
+<p>Mostra l'ultima volta che un proprietario di token ha pubblicato un nuovo aggiornamento o un volontario ha proposto una nuova modifica.</p>
+<h3>Come possiamo migliorare il Karma?</h3>
+<p>Mantieni la descrizione breve e obiettiva:</p>
+<ul class="list-group my-3">
+    <li class="list-group-item">assicurati che l'intera risorsa sia descritta in un unico risultato di ricerca
+    <li class="list-group-item">snellisci la descrizione arrivando al punto e descrivendo solo la risorsa
+    <li class="list-group-item">evita i termini complessi sia nel Titolo che nella Descrizione
+    <li class="list-group-item">usa solo la lingua inglese ed evita i tecnicismi superflui
+    <li class="list-group-item">elenca tutti i possibili casi d'uso della risorsa
+    <li class="list-group-item">assicurati che il pulsante Homepage porti a una pagina Web recente e strettamente correlata alla risorsa
+</ul><p>In generale, cerca di mantenere il tempo necessario per leggere la descrizione sotto i 2 minuti.</p>
+<h3>Come possiamo migliorare le visualizzazioni?</h3>
+<p>Il Teaser è la prima cosa che i visitatori vedono affianco al nome della risorsa ed ha lo scopo di attirare la loro attenzione verso qualsiasi risorsa di cui potrebbero aver bisogno nell'immediato. Innanzitutto, assicurati che la risorsa abbia un buon Karma, quindi sostituisci il Teaser con uno slogan o una descrizione allettante di una riga.</p>
+<h2>Quali sono i vantaggi delle statistiche positive?</h2>
+<p>Tutte le risorse con un Karma eccezionale e un numero elevato di visualizzazioni hanno molte più probabilità di essere consigliate nella Homepage o almeno di essere offerte come suggerimento di ricerca ai visitatori di tutto il mondo. Questo processo è completamente automatico e avviene ogni minuto. Inoltre, le risorse popolari con un buon karma si posizionano meglio nei risultati di ricerca. Infine, la semplice azione di effettuare un cambiamento dà essa stessa un piccolo impulso al Karma e questo bonus dura per 6 mesi dalla modifica più recente.</p>
+
+
+        <footer class="mt-5">
+          <a id="fswdb-logo" class="btn btn-sm btn-link fs-3" href="https://fswdb.eu/about" target="_top">Free Software Database</a>
+          <a class="btn btn-sm btn-link fs-2 px-3 user-select-none float-end" href="#" draggable="false">&uArr;</a>
+        </footer>
+      </main>
+    </div>
+  </div>
+</body>

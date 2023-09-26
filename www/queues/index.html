@@ -1,0 +1,140 @@
+<!doctype html>
+<title>Queues — FSWDB - Knowledge Base</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js" integrity="sha512-1/RvZTcCDEUjY/CypiMz+iqqtaoQfAITmNSJY17Myp4Ms5mdxPS5UV7iOfdZoxcGhzFbOm6sntTKJppjvuhg4g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css" integrity="sha512-ZnR2wlLbSbr8/c9AgLg3jQPAattCUImNsae6NHYnS9KrIwRdcY9DxFotXhNAKIKbAXlRnujIqUWoXXwqyFOeIQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="/static/style.css">
+<body>
+  <div class="container bg-light">
+    <header class="row my-5 user-select-none ">
+      <!-- LOGO -->
+      <h1 class="col-12 col-sm-auto">
+          <a class="p-2 me-5" href="/">
+            Knowledge Base
+          </a>
+      </h1>
+      <!-- LANG -->
+      <div class="col hstack">
+        
+          
+            <a class="btn btn-sm active">
+              <img src="/static/img/en.webp" width="32px" height="32px">
+              <span class="d-none">EN</span>
+            </a>
+          
+        
+          
+            <a class="btn btn-sm" href="/it/queues/">
+              <img src="/static/img/it.webp" width="32px" height="32px">
+              <span class="d-none">IT</span>
+            </a>
+          
+        
+      </div>
+      <!-- DDG -->
+      <div class="col-6 col-sm-auto me-sm-2">
+        <form method="get" id="ddgSearch" action="https://duckduckgo.com/">
+            <input type="hidden" name="sites" value="https://kb.fswdb.eu/" hidden>
+            <input type="hidden" name="k7" value="#ffffff" hidden>
+            <input type="hidden" name="k8" value="#222222" hidden>
+            <input type="hidden" name="k9" value="#daa520" hidden>
+            <input type="hidden" name="kx" value="#9b9b9b" hidden>
+            <input type="hidden" name="kj" value="#daa520" hidden>
+            <input type="hidden" name="kt" value="n" hidden>
+            <input type="hidden" name="kw" value="s" hidden>
+            <input type="hidden" name="ku" value="1" hidden>
+            <input type="hidden" name="kae" value="r" hidden>
+            <input type="hidden" name="kf" value="-1" hidden>
+            <input type="hidden" name="kp" value="1" hidden>
+            <input type="hidden" name="kz" value="-1" hidden>
+            <input type="hidden" name="t" value="fswdb" hidden>
+            <div class="hstack gap-2">
+              <input class="form-control fs-3" type="search" size="10" name="q" aria-label="Search https://kb.fswdb.eu/ on DuckDuckGo"  aria-required="true" required>
+              <button class="btn btn-outline-secondary fs-3 fw-bold bi bi-search" type="submit">
+                <span class="visually-hidden">Search</span>
+              </button>
+            </div>
+        </form>
+      </div>
+    </header>
+    <div class="row">
+      <nav class="col-12 col-sm-auto pe-0 user-select-none">
+        <ul class="nav navbar-nav sticky-top">
+          
+            
+            <li>
+              <a class="rounded-start" href="/licensing/">Licensing</a>
+            </li>
+            
+          
+            
+            <li>
+              <a class="rounded-start" href="/community-guidelines/">Guidelines</a>
+            </li>
+            
+          
+            
+            <li>
+              <a class="rounded-start" href="/credentials/">Credentials</a>
+            </li>
+            
+          
+             
+            <li class="active">
+              <a class="rounded-start text-decoration-none">Queues</a>
+            </li>
+            
+          
+            
+            <li>
+              <a class="rounded-start" href="/regulations/">Regulations</a>
+            </li>
+            
+          
+            
+            <li>
+              <a class="rounded-start" href="/volunteering/">Volunteering</a>
+            </li>
+            
+          
+            
+            <li>
+              <a class="rounded-start" href="/statistics/">Statistics</a>
+            </li>
+            
+          
+            
+            <li>
+              <a class="rounded-start" href="/status/">Status</a>
+            </li>
+            
+          
+        </ul>
+      </nav>
+      <main class="col p-3 mb-5">
+        
+  <h2>Queues</h2>
+  <p>This platform is heavily automated to guarantee the highest level of efficiency.
+When the system detects an issue that requires human intervention, it takes note of the defective resource by placing it inside a queue.</p>
+<h3>How does the Irregular queue work?</h3>
+<p>This is a public unmanned queue that collects all resources which cannot be easily browsed by our visitors world-wide.
+In particular, if the Homepage that represents a certain resource is unreachable for a week or more, the resource disappears from the search engine and is enqueued here. After a month (28 days and at least 28 failed routine checks) the resource is cloned to the Suggestions queue.</p>
+<h3>How does the Blacklist queue work?</h3>
+<p>This is a public unmanned queue which continuously collects new potentially dangerous internet hosts.
+All hosts in this queue were at some point involved into cybercrime and are therefore automatically banned from publishing their resources on the platform. All resources which have their homepage hosted by one or more of the addresses listed here are considered unsafe to browse and automatically added to the Irregular queue.</p>
+<h3>How does the Suggestions queue work?</h3>
+<p>This is a public manned queue that collects all resources which were unavailable to the public for an extended amount of time and may have an alternative, maybe newer, homepage somewhere else. Volunteers can pick a different homepage amongst those already suggested via the Irregular queue. When this happens the resource reappears in the search engine and disappears from both the Irregular queue and the Suggestions queue.</p>
+<h3>How can I have my resource removed from the Irregular queue?</h3>
+<p>Fixing the issue on the webserver where the homepage of the resource is hosted will revert the exclusion automatically after two days. If the issue was fixed and two full days have passed, make sure with your system administrator that the firewall is not blocking entire countries by mistake. If your administrator can't figure out why a resource isn't whitelisted automatically, feel free to contact the platform.</p>
+
+
+        <footer class="mt-5">
+          <a id="fswdb-logo" class="btn btn-sm btn-link fs-3" href="https://fswdb.eu/about" target="_top">Free Software Database</a>
+          <a class="btn btn-sm btn-link fs-2 px-3 user-select-none float-end" href="#" draggable="false">&uArr;</a>
+        </footer>
+      </main>
+    </div>
+  </div>
+</body>

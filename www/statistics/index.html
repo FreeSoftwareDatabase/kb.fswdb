@@ -1,0 +1,153 @@
+<!doctype html>
+<title>Statistics — FSWDB - Knowledge Base</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js" integrity="sha512-1/RvZTcCDEUjY/CypiMz+iqqtaoQfAITmNSJY17Myp4Ms5mdxPS5UV7iOfdZoxcGhzFbOm6sntTKJppjvuhg4g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css" integrity="sha512-ZnR2wlLbSbr8/c9AgLg3jQPAattCUImNsae6NHYnS9KrIwRdcY9DxFotXhNAKIKbAXlRnujIqUWoXXwqyFOeIQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="/static/style.css">
+<body>
+  <div class="container bg-light">
+    <header class="row my-5 user-select-none ">
+      <!-- LOGO -->
+      <h1 class="col-12 col-sm-auto">
+          <a class="p-2 me-5" href="/">
+            Knowledge Base
+          </a>
+      </h1>
+      <!-- LANG -->
+      <div class="col hstack">
+        
+          
+            <a class="btn btn-sm active">
+              <img src="/static/img/en.webp" width="32px" height="32px">
+              <span class="d-none">EN</span>
+            </a>
+          
+        
+          
+            <a class="btn btn-sm" href="/it/statistics/">
+              <img src="/static/img/it.webp" width="32px" height="32px">
+              <span class="d-none">IT</span>
+            </a>
+          
+        
+      </div>
+      <!-- DDG -->
+      <div class="col-6 col-sm-auto me-sm-2">
+        <form method="get" id="ddgSearch" action="https://duckduckgo.com/">
+            <input type="hidden" name="sites" value="https://kb.fswdb.eu/" hidden>
+            <input type="hidden" name="k7" value="#ffffff" hidden>
+            <input type="hidden" name="k8" value="#222222" hidden>
+            <input type="hidden" name="k9" value="#daa520" hidden>
+            <input type="hidden" name="kx" value="#9b9b9b" hidden>
+            <input type="hidden" name="kj" value="#daa520" hidden>
+            <input type="hidden" name="kt" value="n" hidden>
+            <input type="hidden" name="kw" value="s" hidden>
+            <input type="hidden" name="ku" value="1" hidden>
+            <input type="hidden" name="kae" value="r" hidden>
+            <input type="hidden" name="kf" value="-1" hidden>
+            <input type="hidden" name="kp" value="1" hidden>
+            <input type="hidden" name="kz" value="-1" hidden>
+            <input type="hidden" name="t" value="fswdb" hidden>
+            <div class="hstack gap-2">
+              <input class="form-control fs-3" type="search" size="10" name="q" aria-label="Search https://kb.fswdb.eu/ on DuckDuckGo"  aria-required="true" required>
+              <button class="btn btn-outline-secondary fs-3 fw-bold bi bi-search" type="submit">
+                <span class="visually-hidden">Search</span>
+              </button>
+            </div>
+        </form>
+      </div>
+    </header>
+    <div class="row">
+      <nav class="col-12 col-sm-auto pe-0 user-select-none">
+        <ul class="nav navbar-nav sticky-top">
+          
+            
+            <li>
+              <a class="rounded-start" href="/licensing/">Licensing</a>
+            </li>
+            
+          
+            
+            <li>
+              <a class="rounded-start" href="/community-guidelines/">Guidelines</a>
+            </li>
+            
+          
+            
+            <li>
+              <a class="rounded-start" href="/credentials/">Credentials</a>
+            </li>
+            
+          
+            
+            <li>
+              <a class="rounded-start" href="/queues/">Queues</a>
+            </li>
+            
+          
+            
+            <li>
+              <a class="rounded-start" href="/regulations/">Regulations</a>
+            </li>
+            
+          
+            
+            <li>
+              <a class="rounded-start" href="/volunteering/">Volunteering</a>
+            </li>
+            
+          
+             
+            <li class="active">
+              <a class="rounded-start text-decoration-none">Statistics</a>
+            </li>
+            
+          
+            
+            <li>
+              <a class="rounded-start" href="/status/">Status</a>
+            </li>
+            
+          
+        </ul>
+      </nav>
+      <main class="col p-3 mb-5">
+        
+  <h2>Statistics</h2>
+  <h2>Who can edit a resource?</h2>
+<p>All resources inside the Free Software Database can be improved. This can be done by token owners (developers, copyright owners, maintainers, publishers, &hellip;) or by the volunteers. Any edit performed has the effect of either worsening or improving the statistics of the edited resource. The statistics are refreshed once a day.</p>
+<h2>Karma</h2>
+<p>This value represents how much time the average visitor needs to fully understand what the resource does.</p>
+<h2>Views</h2>
+<p>This value is the total number of times a resource has attracted the interest of the visitors.</p>
+<h2>Date</h2>
+<p>Shows the last time a token owner published a new update or a volunteer proposed a new change.</p>
+<h3>How can we improve the Karma?</h3>
+<p>Keep the description short and objective:</p>
+<ul class="list-group my-3">
+    <li class="list-group-item">make sure that the entire resource is described in a single search result
+    <li class="list-group-item">streamline the Description by getting to the point and describe only the resource
+    <li class="list-group-item">avoid complex terminology in both Title and Description
+    <li class="list-group-item">use only the English language and keep it simple
+    <li class="list-group-item">list all the possible use cases for a resource
+    <li class="list-group-item">make sure the Homepage button links to an up-to-date webpage which is strictly related to the resource
+</ul><p>In general, try to keep the time needed to read the description under 2 minutes.</p>
+<h3>How can we improve the Views?</h3>
+<p>The Teaser is what the visitors see near the resource name and it is meant to attract their attention toward whatever resource they may need in the immediate.
+First, make sure the resource has good Karma, then replace the Teaser with a slogan or an enticing one-line description.</p>
+<h2>What are the benefits of good statistics?</h2>
+<p>All resources with outstanding Karma and a high number of views are much more likely to be recommended in the Homepage or at least be offered as a search suggestion to visitors around the world. This process is fully automatic and happens every minute.
+In addition, popular resources with good karma rank better in the search results.
+Finally, the simple action of making a change gives a small Karma boost which lasts for 6 months.</p>
+
+
+        <footer class="mt-5">
+          <a id="fswdb-logo" class="btn btn-sm btn-link fs-3" href="https://fswdb.eu/about" target="_top">Free Software Database</a>
+          <a class="btn btn-sm btn-link fs-2 px-3 user-select-none float-end" href="#" draggable="false">&uArr;</a>
+        </footer>
+      </main>
+    </div>
+  </div>
+</body>
